@@ -30,5 +30,8 @@ steps:
     sudo npm -v
     npm install
     npm run build
+    echo "**********************************************************************************************"
+    echo ifconfig
+    npm start
 
   displayName: 'npm install and build'
