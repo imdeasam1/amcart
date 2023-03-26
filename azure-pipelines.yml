@@ -10,16 +10,16 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: NodeTool@0
-  inputs:
-    checkLatest: True
-  displayName: 'Install Node.js'
+#- task: NodeTool@0
+  #inputs:
+    #checkLatest: True
+  #displayName: 'Install Node.js'
 
 - script: |
-    sudo apt-get remove nodejs
-    sudo apt-get purge nodejs
-    sudo apt-get autoremove
-    sudo apt-get remove npm
+    #sudo apt-get remove nodejs
+    #sudo apt-get purge nodejs
+    #sudo apt-get autoremove
+    #sudo apt-get remove npm
     curl -sL https://deb.nodesource.com/setup_18.x
     sudo apt install nodejs
     echo "Check version"
