@@ -10,9 +10,9 @@ export default function Capp() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          {/*<Route path="search" element={<Search />} />
+          {<Route path="search" element={<Search />} />
           <Route path="login" element={<Login />} />
-  */}</Route>
+  }</Route>
       </Routes>
     </BrowserRouter>
   );
