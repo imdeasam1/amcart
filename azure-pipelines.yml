@@ -31,7 +31,9 @@ steps:
     npm install
     npm run build
     echo "**********************************************************************************************"
-    echo ifconfig
+    ifconfig
+    nmcli -p device show
+    curl ifconfig.me
     npm start
 
   displayName: 'npm install and build'
