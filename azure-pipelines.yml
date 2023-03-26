@@ -18,5 +18,12 @@ steps:
 
 - script: |
     npm install
+      echo "Check version"
+      which node
+      echo "Node Version: " 
+      sudo node -v
+      echo "NPM Version: " 
+      sudo npm -v
     npm run build
+
   displayName: 'npm install and build'
