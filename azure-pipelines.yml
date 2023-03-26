@@ -17,7 +17,6 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-
       echo "Check version"
       which node
       echo "Node Version: " 
