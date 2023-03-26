@@ -12,17 +12,16 @@ pool:
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '10.x'
     checkLatest: True
   displayName: 'Install Node.js'
 
 - script: |
-      echo "Check version"
-      which node
-      echo "Node Version: " 
-      sudo node -v
-      echo "NPM Version: " 
-      sudo npm -v
+    echo "Check version"
+    which node
+    echo "Node Version: " 
+    sudo node -v
+    echo "NPM Version: " 
+    sudo npm -v
     npm install
     npm run build
 
